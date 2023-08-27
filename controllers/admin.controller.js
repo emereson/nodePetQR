@@ -68,7 +68,7 @@ exports.generateQRCode = catchAsync(async (req, res, next) => {
 
   for (let i = 0; i < numCodes; i++) {
     const uuid = uuidv4();
-    const registrationUrl = `https://tiny-arithmetic-c97838.netlify.app/#/user/registerPet/${uuid}`;
+    const registrationUrl = `https://aquiestoyconqr.com/#/user/registerPe/${uuid}`;
 
     const qrCodeDataUrl = await qrcode.toDataURL(registrationUrl);
 
