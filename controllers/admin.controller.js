@@ -68,7 +68,7 @@ exports.generateQRCode = catchAsync(async (req, res, next) => {
 
   for (let i = 0; i < numCodes; i++) {
     const uuid = uuidv4();
-    const registrationUrl = `https://aquiestoyconqr.com/#/user/registerPe/${uuid}`;
+    const registrationUrl = `https://aquiestoyconqr.com/#/user/registerPet/${uuid}`;
 
     const qrCodeDataUrl = await qrcode.toDataURL(registrationUrl);
 
